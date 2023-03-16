@@ -142,7 +142,7 @@ export const request = async <T = Response>(
   options?: RequestInit,
   retries = requestSettings.retries
 ): Promise<T> => {
-  const { userId, integrator } = ConfigService.getInstance().getConfig()
+  const { userId } = ConfigService.getInstance().getConfig()
 
   try {
     const updatedOptions: RequestInit = {
@@ -154,12 +154,6 @@ export const request = async <T = Response>(
         ...options?.headers,
         'X-LIFI-UserId': userId,
       }
-    }
-
-    // integrator is mandatory during SDK initialization
-    updatedOptions.headers = {
-      ...options?.headers,
-      'X-LIFI-Integrator': integrator,
     }
 
     const response: Response = await fetch(url, updatedOptions)

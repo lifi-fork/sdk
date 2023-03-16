@@ -54,7 +54,6 @@ export default class ConfigService {
       defaultRouteOptions: {
         integrator: 'lifi-sdk',
       },
-      integrator: 'lifi-sdk',
     }
   }
 
@@ -109,7 +108,6 @@ export default class ConfigService {
     )
 
     this.config.userId = configUpdate.userId || this.config.userId
-    this.config.integrator = configUpdate.integrator || this.config.integrator
 
     return this.config
   }
