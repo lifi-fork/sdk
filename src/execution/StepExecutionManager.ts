@@ -48,6 +48,7 @@ export class StepExecutionManager {
       !existingProcess?.txHash &&
       !isZeroAddress(step.action.fromToken.address)
     ) {
+      // if safe tx skip allowance call
       await checkAllowance(
         signer,
         step,
@@ -62,6 +63,24 @@ export class StepExecutionManager {
     let process = statusManager.findOrCreateProcess(step, currentProcessType)
 
     if (process.status !== 'DONE') {
+      /* 
+        Case resumingSafe tx case: some signatures sent (step.execution.multisigData.multisigHash property is available) , not all signatures give
+        
+          // loop and poll SAFE SDK or SAFE API to get confirmation that all parties have signed TX using Safe hash in step.execution.multisigData.multisigHash
+
+          // If confirmation that all parties signed
+          // -> decode internal safe TX and get LIFI TX HASH
+
+          process = statusManager.updateProcess(step, process.type, 'PENDING', {
+            txHash: transaction.hash,
+            txLink:
+              fromChain.metamask.blockExplorerUrls[0] +
+              'tx/' +
+              transaction.hash,
+          })
+
+
+      */
       try {
         let transaction: TransactionResponse
         if (process.txHash) {
@@ -177,6 +196,23 @@ export class StepExecutionManager {
           // Submit the transaction
           transaction = await signer.sendTransaction(transactionRequest)
 
+          // jump in with safe logic: if safe tx
+          // get safe tx hash
+          // update process
+          /*
+            process = statusManager.updateProcess(step, process.type, 'ACTION_REQUIRED', {
+            multisigData: {
+              multisigHash: "internal safe hash"
+            }
+          })
+          */
+          // loop and poll SAFE SDK or SAFE API to get confirmation that all parties have signed TX
+
+          // If confirmation that all parties signed
+          // -> decode internal safe TX and get LIFI TX HASH
+          // -> use LIFI hash to get transaction object
+
+          // proceed with normal flow:
           // STEP 4: Wait for the transaction
           process = statusManager.updateProcess(step, process.type, 'PENDING', {
             txHash: transaction.hash,
