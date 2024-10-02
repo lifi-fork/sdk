@@ -1,6 +1,8 @@
 import {
   isContractCallsRequestWithFromAmount,
   isContractCallsRequestWithToAmount,
+  isQuoteRequestWithFromAmount,
+  isQuoteRequestWithToAmount,
   type ChainId,
   type ChainKey,
   type ChainsRequest,
@@ -80,7 +82,6 @@ export const getQuote = async (
     'fromChain',
     'fromToken',
     'fromAddress',
-    'fromAmount',
     'toChain',
     'toToken',
   ]
@@ -93,6 +94,17 @@ export const getQuote = async (
       )
     }
   })
+  const fromAmount = isQuoteRequestWithFromAmount(params)
+    ? params.fromAmount
+    : undefined
+  const toAmount = isQuoteRequestWithToAmount(params)
+    ? params.toAmount
+    : undefined
+  if (!fromAmount && !toAmount) {
+    throw new SDKError(
+      new ValidationError(`Either "fromAmount" or "toAmount" must be provided.`)
+    )
+  }
   const _config = config.get()
   // apply defaults
   params.integrator ??= _config.integrator
@@ -152,14 +164,15 @@ export const getContractCallsQuote = async (
       )
     }
   })
-  if (
-    !isContractCallsRequestWithFromAmount(params) &&
-    !isContractCallsRequestWithToAmount(params)
-  ) {
+  const fromAmount = isContractCallsRequestWithFromAmount(params)
+    ? params.fromAmount
+    : undefined
+  const toAmount = isContractCallsRequestWithToAmount(params)
+    ? params.toAmount
+    : undefined
+  if (!fromAmount && !toAmount) {
     throw new SDKError(
-      new ValidationError(
-        `Required parameter "fromAmount" or "toAmount" is missing.`
-      )
+      new ValidationError(`Either "fromAmount" or "toAmount" must be provided.`)
     )
   }
   const _config = config.get()

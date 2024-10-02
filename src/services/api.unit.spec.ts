@@ -24,12 +24,12 @@ import {
 import { setupTestEnvironment } from '../../tests/setup.js'
 import { findDefaultToken } from '../../tests/tokens.js'
 import { config } from '../config.js'
+import { ValidationError } from '../errors/errors.js'
 import * as request from '../request.js'
 import { requestSettings } from '../request.js'
-import { ValidationError } from '../errors/errors.js'
+import { SDKError } from '../utils/index.js'
 import * as ApiService from './api.js'
 import { handlers } from './api.unit.handlers.js'
-import { SDKError } from '../utils/index.js'
 
 const mockedFetch = vi.spyOn(request, 'request')
 
@@ -254,7 +254,26 @@ describe('ApiService', () => {
           })
         ).rejects.toThrowError(
           new SDKError(
-            new ValidationError('Required parameter "fromAmount" is missing.')
+            new ValidationError(
+              'Either "fromAmount" or "toAmount" must be provided.'
+            )
+          )
+        )
+
+        await expect(
+          ApiService.getQuote({
+            fromChain,
+            fromToken,
+            fromAddress,
+            toAmount: undefined as unknown as string,
+            toChain,
+            toToken,
+          })
+        ).rejects.toThrowError(
+          new SDKError(
+            new ValidationError(
+              'Either "fromAmount" or "toAmount" must be provided.'
+            )
           )
         )
 
