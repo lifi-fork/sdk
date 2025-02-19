@@ -1,4 +1,4 @@
-import type { ExecutionStatus, ProcessStatus, Route } from '@lifi/types'
+import type { ExecutionStatus, ProcessStatus, Route } from '@lifi-fork/types'
 import type { Mock } from 'vitest'
 import { beforeAll, beforeEach, describe, expect, it, vi } from 'vitest'
 import { buildRouteObject, buildStepObject } from '../../tests/fixtures.js'

@@ -1,13 +1,9 @@
-<div align="center">
+# LI.FI SDK
 
 [![license](https://img.shields.io/badge/license-Apache%202-blue)](/LICENSE.md)
-[![npm latest package](https://img.shields.io/npm/v/@lifi/sdk/latest.svg)](https://www.npmjs.com/package/@lifi/sdk)
-[![npm downloads](https://img.shields.io/npm/dm/@lifi/sdk.svg)](https://www.npmjs.com/package/@lifi/sdk)
+[![npm latest package](https://img.shields.io/npm/v/@lifi-fork/sdk/latest.svg)](https://www.npmjs.com/package/@lifi-fork/sdk)
+[![npm downloads](https://img.shields.io/npm/dm/@lifi-fork/sdk.svg)](https://www.npmjs.com/package/@lifi-fork/sdk)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/lifiprotocol.svg?label=follow+LI.FI)](https://twitter.com/lifiprotocol)
-
-</div>
-
-<h1 align="center">LI.FI SDK</h1>
 
 [**LI.FI SDK**](https://docs.li.fi/integrate-li.fi-sdk/li.fi-sdk-overview) provides a powerful toolkit for developers to enable seamless cross-chain and on-chain swaps and bridging within their applications. Our JavaScript/TypeScript SDK can be implemented in front-end or back-end environments, allowing you to build robust UX/UI around our advanced bridge and swap functionalities. LI.FI SDK efficiently manages all communications between our smart routing API and smart contracts and ensures optimal performance, security, and scalability for your cross-chain and on-chain needs.
 
@@ -25,13 +21,13 @@
 ## Installation
 
 ```bash
-pnpm add @lifi/sdk
+pnpm add @lifi-fork/sdk
 ```
 
 or
 
 ```bash
-npm install --save @lifi/sdk
+npm install --save @lifi-fork/sdk
 ```
 
 ## Quick Start
@@ -41,7 +37,7 @@ npm install --save @lifi/sdk
 Firstly, create SDK config with your integrator string.
 
 ```ts
-import { createConfig } from '@lifi/sdk'
+import { createConfig } from '@lifi-fork/sdk'
 
 createConfig({
   integrator: 'Your dApp/company name',
@@ -53,7 +49,7 @@ createConfig({
 Now you can interact with the SDK and for example request a quote.
 
 ```ts
-import { ChainId, getQuote } from '@lifi/sdk'
+import { ChainId, getQuote } from '@lifi-fork/sdk'
 
 const quote = await getQuote({
   fromAddress: '0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045',

@@ -5,7 +5,7 @@ import type {
   RouteOptions,
   RoutesRequest,
   StaticToken,
-} from '@lifi/types'
+} from '@lifi-fork/types'
 
 export const isRoutesRequest = (
   routesRequest: RoutesRequest

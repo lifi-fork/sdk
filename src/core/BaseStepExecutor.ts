@@ -1,4 +1,4 @@
-import type { LiFiStep } from '@lifi/types'
+import type { LiFiStep } from '@lifi-fork/types'
 import { StatusManager } from './StatusManager.js'
 import type {
   ExecutionOptions,

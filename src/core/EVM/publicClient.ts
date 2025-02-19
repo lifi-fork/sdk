@@ -1,4 +1,4 @@
-import { ChainId } from '@lifi/types'
+import { ChainId } from '@lifi-fork/types'
 import type { Client } from 'viem'
 import { http, createClient, fallback, webSocket } from 'viem'
 import { type Chain, mainnet } from 'viem/chains'

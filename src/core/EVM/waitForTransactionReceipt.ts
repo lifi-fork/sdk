@@ -1,4 +1,4 @@
-import type { ChainId } from '@lifi/types'
+import type { ChainId } from '@lifi-fork/types'
 import type {
   Chain,
   Client,

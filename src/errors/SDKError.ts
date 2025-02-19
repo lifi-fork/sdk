@@ -1,4 +1,4 @@
-import type { LiFiStep, Process } from '@lifi/types'
+import type { LiFiStep, Process } from '@lifi-fork/types'
 import { version } from '../version.js'
 import type { BaseError } from './baseError.js'
 import type { ErrorCode } from './constants.js'

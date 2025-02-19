@@ -1,4 +1,4 @@
-import type { LiFiStep } from '@lifi/types'
+import type { LiFiStep } from '@lifi-fork/types'
 import type { LiFiStepExtended, RouteExtended } from './types.js'
 
 export const prepareRestart = async (route: RouteExtended) => {

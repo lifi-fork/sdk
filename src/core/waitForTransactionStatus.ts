@@ -3,7 +3,7 @@ import type {
   LiFiStep,
   ProcessType,
   StatusResponse,
-} from '@lifi/types'
+} from '@lifi-fork/types'
 import { ServerError } from '../errors/errors.js'
 import { getStatus } from '../services/api.js'
 import { waitForResult } from '../utils/waitForResult.js'

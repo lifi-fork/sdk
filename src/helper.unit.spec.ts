@@ -26,7 +26,7 @@ describe('helpers', () => {
     })
 
     it('should be able to check the version number against npm', async () => {
-      const packageName = '@lifi/sdk'
+      const packageName = '@lifi-fork/sdk'
       const currentVersion = '0.0.0'
 
       await checkPackageUpdates(packageName, currentVersion)
@@ -41,7 +41,7 @@ describe('helpers', () => {
     })
 
     it('should not report if version matchs the latest on npm', async () => {
-      const packageName = '@lifi/sdk'
+      const packageName = '@lifi-fork/sdk'
       const currentVersion = '2.5.6'
 
       await checkPackageUpdates(packageName, currentVersion)
@@ -58,7 +58,7 @@ describe('helpers', () => {
         json: () => Promise.resolve({ version: latestVersion }),
       } as Response)
 
-      const packageName = '@lifi/sdk'
+      const packageName = '@lifi-fork/sdk'
       const currentVersion = '0.0.0'
 
       await checkPackageUpdates(packageName, currentVersion)

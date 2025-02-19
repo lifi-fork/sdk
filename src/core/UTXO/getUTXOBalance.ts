@@ -1,4 +1,4 @@
-import { ChainId, type Token, type TokenAmount } from '@lifi/types'
+import { ChainId, type Token, type TokenAmount } from '@lifi-fork/types'
 import { getUTXOAPIPublicClient } from './getUTXOAPIPublicClient.js'
 import { getUTXOPublicClient } from './getUTXOPublicClient.js'
 

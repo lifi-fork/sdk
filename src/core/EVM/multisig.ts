@@ -1,4 +1,4 @@
-import type { ExtendedChain, LiFiStep, ProcessType } from '@lifi/types'
+import type { ExtendedChain, LiFiStep, ProcessType } from '@lifi-fork/types'
 import type { Hash } from 'viem'
 import { LiFiErrorCode } from '../../errors/constants.js'
 import { TransactionError } from '../../errors/errors.js'

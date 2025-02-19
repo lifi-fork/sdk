@@ -1,4 +1,4 @@
-import * as lifiDataTypes from '@lifi/data-types'
+import * as lifiDataTypes from '@lifi-fork/data-types'
 import {
   ChainId,
   CoinKey,
@@ -6,7 +6,7 @@ import {
   createConfig,
   executeRoute,
   getRoutes,
-} from '@lifi/sdk'
+} from '@lifi-fork/sdk'
 import type { Address, Chain } from 'viem'
 import { http, createWalletClient } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'

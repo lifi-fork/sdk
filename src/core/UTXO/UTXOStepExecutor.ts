@@ -1,6 +1,6 @@
 import { signPsbt, waitForTransaction } from '@bigmi/core'
 import type { ReplacementReason } from '@bigmi/core'
-import { ChainId } from '@lifi/types'
+import { ChainId } from '@lifi-fork/types'
 import { Psbt, address, networks } from 'bitcoinjs-lib'
 import { type Client, withTimeout } from 'viem'
 import { config } from '../../config.js'

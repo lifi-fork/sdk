@@ -1,4 +1,4 @@
-import type { ChainId, Token, TokenAmount } from '@lifi/types'
+import type { ChainId, Token, TokenAmount } from '@lifi-fork/types'
 import type { Address } from 'viem'
 import {
   getBalance,

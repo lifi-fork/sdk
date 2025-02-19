@@ -3,7 +3,7 @@ import type {
   ProcessType,
   StatusMessage,
   Substatus,
-} from '@lifi/types'
+} from '@lifi-fork/types'
 
 const processMessages: Record<
   ProcessType,

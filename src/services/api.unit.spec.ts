@@ -7,8 +7,8 @@ import type {
   StepTool,
   Token,
   TransactionAnalyticsRequest,
-} from '@lifi/types'
-import { ChainId, CoinKey } from '@lifi/types'
+} from '@lifi-fork/types'
+import { ChainId, CoinKey } from '@lifi-fork/types'
 import { http, HttpResponse } from 'msw'
 import { setupServer } from 'msw/node'
 import {

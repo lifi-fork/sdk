@@ -6,7 +6,7 @@ import type {
   Process,
   ProcessStatus,
   ProcessType,
-} from '@lifi/types'
+} from '@lifi-fork/types'
 import { executionState } from './executionState.js'
 import { getProcessMessage } from './processMessages.js'
 import type { LiFiStepExtended } from './types.js'

@@ -1,9 +1,9 @@
-import * as lifiDataTypes from '@lifi/data-types'
+import * as lifiDataTypes from '@lifi-fork/data-types'
 import type {
   ContractCallsQuoteRequest,
   QuoteRequest,
   StatusResponse,
-} from '@lifi/sdk'
+} from '@lifi-fork/sdk'
 import {
   ChainId,
   CoinKey,
@@ -12,7 +12,7 @@ import {
   getContractCallsQuote,
   getQuote,
   getStatus,
-} from '@lifi/sdk'
+} from '@lifi-fork/sdk'
 import type { Address, Chain } from 'viem'
 import { http, createWalletClient, fromHex, publicActions } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'

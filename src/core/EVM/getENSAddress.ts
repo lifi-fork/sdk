@@ -1,4 +1,4 @@
-import { ChainId } from '@lifi/types'
+import { ChainId } from '@lifi-fork/types'
 import { getEnsAddress, normalize } from 'viem/ens'
 import { getPublicClient } from './publicClient.js'
 

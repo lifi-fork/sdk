@@ -1,5 +1,5 @@
-import type { LiFiStep } from '@lifi/sdk'
-import { getTokenAllowance, setTokenAllowance } from '@lifi/sdk'
+import type { LiFiStep } from '@lifi-fork/sdk'
+import { getTokenAllowance, setTokenAllowance } from '@lifi-fork/sdk'
 import type { PrivateKeyAccount, PublicClient, WalletClient } from 'viem'
 
 const AddressZero = '0x0000000000000000000000000000000000000000'

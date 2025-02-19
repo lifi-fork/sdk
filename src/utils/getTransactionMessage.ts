@@ -1,4 +1,4 @@
-import type { LiFiStep, Process } from '@lifi/types'
+import type { LiFiStep, Process } from '@lifi-fork/types'
 import { formatUnits } from 'viem'
 import { config } from '../config.js'
 

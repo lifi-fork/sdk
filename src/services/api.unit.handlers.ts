@@ -1,4 +1,4 @@
-import { ChainId, CoinKey } from '@lifi/types'
+import { ChainId, CoinKey } from '@lifi-fork/types'
 import { http, HttpResponse } from 'msw'
 import { findDefaultToken } from '../../tests/tokens.js'
 import { config } from '../config.js'

@@ -1,4 +1,4 @@
-import type { ChainId, ExtendedChain, RouteOptions } from '@lifi/types'
+import type { ChainId, ExtendedChain, RouteOptions } from '@lifi-fork/types'
 import type { SDKProvider } from '../core/types.js'
 
 export interface SDKBaseConfig {

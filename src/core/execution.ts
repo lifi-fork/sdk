@@ -1,4 +1,4 @@
-import type { Route } from '@lifi/types'
+import type { Route } from '@lifi-fork/types'
 import { config } from '../config.js'
 import { executionState } from './executionState.js'
 import { prepareRestart } from './prepareRestart.js'

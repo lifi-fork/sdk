@@ -11,9 +11,9 @@ importers:
       '@bigmi/core':
         specifier: ^0.1.1
         version: 0.1.1(bs58@6.0.0)(bufferutil@4.0.8)(typescript@5.7.3)(utf-8-validate@5.0.10)
-      '@lifi/types':
-        specifier: ^16.8.1
-        version: 16.8.1
+      '@lifi-fork/types':
+        specifier: ^16.11.0
+        version: 16.11.0
       '@noble/curves':
         specifier: ^1.8.1
         version: 1.8.1
@@ -487,8 +487,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@lifi/types@16.8.1':
-    resolution: {integrity: sha512-zv5wmYNc3lf5eEWtpCVH6WS89r2YZT/30SV9tQPmSTP+KUIAW1ZWow8oWl2Rf/EfFO9waH8qtq8xzaklAcR9gg==}
+  '@lifi-fork/types@16.11.0':
+    resolution: {integrity: sha512-+l0nMxw4d8bLJaxIuKvpPGi0sGG8/Jj7BY7n0E0E1vyeSE6AT/brSf4Fd2xCcw2XfsNcTjh12/u2smm1eEys3Q==}
 
   '@mswjs/interceptors@0.37.3':
     resolution: {integrity: sha512-USvgCL/uOGFtVa6SVyRrC8kIAedzRohxIXN5LISlg5C5vLZCn7dgMFVSNhSF9cuBEFrm/O2spDWEZeMnw4ZXYg==}
@@ -3307,7 +3307,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lifi/types@16.8.1': {}
+  '@lifi-fork/types@16.11.0': {}
 
   '@mswjs/interceptors@0.37.3':
     dependencies:

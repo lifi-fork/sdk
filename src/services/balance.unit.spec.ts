@@ -1,5 +1,5 @@
-import type { Token } from '@lifi/types'
-import { ChainId, CoinKey } from '@lifi/types'
+import type { Token } from '@lifi-fork/types'
+import { ChainId, CoinKey } from '@lifi-fork/types'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { findDefaultToken } from '../../tests/tokens.js'
 import * as balance from './balance.js'

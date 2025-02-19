@@ -1,4 +1,4 @@
-import { ChainType } from '@lifi/types'
+import { ChainType } from '@lifi-fork/types'
 import { isAddress } from 'viem'
 import type { StepExecutorOptions } from '../types.js'
 import { EVMStepExecutor } from './EVMStepExecutor.js'

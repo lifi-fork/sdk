@@ -1,4 +1,4 @@
-import type { LiFiStep, Route } from '@lifi/types'
+import type { LiFiStep, Route } from '@lifi-fork/types'
 import { SDKError } from './errors/SDKError.js'
 import { ValidationError } from './errors/errors.js'
 import { name, version } from './version.js'

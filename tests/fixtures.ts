@@ -1,7 +1,7 @@
 // This file holds generator functions to create objects for testing purposes
 
-import type { LiFiStep, Route, Token } from '@lifi/types'
-import { ChainId, CoinKey } from '@lifi/types'
+import type { LiFiStep, Route, Token } from '@lifi-fork/types'
+import { ChainId, CoinKey } from '@lifi-fork/types'
 import type { LiFiStepExtended } from '../src/index.js'
 import { findDefaultToken } from './tokens.js'
 

@@ -1,4 +1,4 @@
-import type { LiFiStep, Process } from '@lifi/types'
+import type { LiFiStep, Process } from '@lifi-fork/types'
 import { SDKError } from '../../errors/SDKError.js'
 import { BaseError } from '../../errors/baseError.js'
 import { ErrorMessage, LiFiErrorCode } from '../../errors/constants.js'

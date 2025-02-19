@@ -3,7 +3,7 @@ import type {
   ExtendedTransactionInfo,
   FullStatusData,
   ProcessType,
-} from '@lifi/types'
+} from '@lifi-fork/types'
 import { LiFiErrorCode } from '../errors/constants.js'
 import { getTransactionFailedMessage } from '../utils/getTransactionMessage.js'
 import type { StatusManager } from './StatusManager.js'

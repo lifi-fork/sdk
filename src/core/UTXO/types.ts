@@ -1,4 +1,4 @@
-import { ChainType } from '@lifi/types'
+import { ChainType } from '@lifi-fork/types'
 import type { Client } from 'viem'
 import type { SDKProvider } from '../types.js'
 
