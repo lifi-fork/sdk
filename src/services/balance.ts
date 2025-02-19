@@ -1,4 +1,4 @@
-import { ChainType, type Token, type TokenAmount } from '@lifi/types'
+import { ChainType, type Token, type TokenAmount } from '@lifi-fork/types'
 import { config } from '../config.js'
 import { ValidationError } from '../errors/errors.js'
 import { isToken } from '../typeguards.js'

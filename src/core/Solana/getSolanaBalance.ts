@@ -1,4 +1,4 @@
-import type { ChainId, Token, TokenAmount } from '@lifi/types'
+import type { ChainId, Token, TokenAmount } from '@lifi-fork/types'
 import { PublicKey } from '@solana/web3.js'
 import { SolSystemProgram } from '../../constants.js'
 import { withDedupe } from '../../utils/withDedupe.js'

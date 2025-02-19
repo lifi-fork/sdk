@@ -6,7 +6,7 @@ import type {
   Step,
   Token,
   TokenAmount,
-} from '@lifi/types'
+} from '@lifi-fork/types'
 import type { Client } from 'viem'
 
 export interface SDKProvider {

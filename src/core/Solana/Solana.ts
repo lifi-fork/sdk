@@ -1,4 +1,4 @@
-import { ChainType } from '@lifi/types'
+import { ChainType } from '@lifi-fork/types'
 import type { StepExecutorOptions } from '../types.js'
 import { SolanaStepExecutor } from './SolanaStepExecutor.js'
 import { getSNSAddress } from './getSNSAddress.js'

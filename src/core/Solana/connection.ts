@@ -1,4 +1,4 @@
-import { ChainId } from '@lifi/types'
+import { ChainId } from '@lifi-fork/types'
 import { Connection } from '@solana/web3.js'
 import { getRpcUrls } from '../rpc.js'
 

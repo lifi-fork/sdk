@@ -1,4 +1,4 @@
-import type { ChainId } from '@lifi/types'
+import type { ChainId } from '@lifi-fork/types'
 import type { Client, Transaction } from 'viem'
 import { getBlock } from 'viem/actions'
 import { config } from '../../config.js'

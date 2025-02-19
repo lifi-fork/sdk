@@ -1,5 +1,5 @@
-import type { Coin, StaticToken } from '@lifi/types'
-import { ChainId, CoinKey } from '@lifi/types'
+import type { Coin, StaticToken } from '@lifi-fork/types'
+import { ChainId, CoinKey } from '@lifi-fork/types'
 
 type BasicToken = {
   address: string

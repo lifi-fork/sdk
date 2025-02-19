@@ -1,4 +1,4 @@
-import type { BaseToken, ChainId } from '@lifi/types'
+import type { BaseToken, ChainId } from '@lifi-fork/types'
 import type { Address } from 'viem'
 import { multicall, readContract } from 'viem/actions'
 import { isNativeTokenAddress } from '../../utils/isZeroAddress.js'

@@ -1,4 +1,4 @@
-import type { Execution, RouteExtended } from '@lifi/sdk'
+import type { Execution, RouteExtended } from '@lifi-fork/sdk'
 
 export const reportStepsExecutionToTerminal = (updatedRoute: RouteExtended) => {
   const lastExecution = updatedRoute.steps.reduce(

@@ -1,4 +1,4 @@
-import type { UnavailableRoutes } from '@lifi/types'
+import type { UnavailableRoutes } from '@lifi-fork/types'
 import type { ExtendedRequestInit } from '../types/request.js'
 import { BaseError } from './baseError.js'
 import { LiFiErrorCode } from './constants.js'

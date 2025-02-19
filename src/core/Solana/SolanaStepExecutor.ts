@@ -1,4 +1,4 @@
-import type {} from '@lifi/types'
+import type {} from '@lifi-fork/types'
 import type { SignerWalletAdapter } from '@solana/wallet-adapter-base'
 import { VersionedTransaction } from '@solana/web3.js'
 import { withTimeout } from 'viem'

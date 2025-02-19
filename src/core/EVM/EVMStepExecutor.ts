@@ -1,4 +1,4 @@
-import type { Process } from '@lifi/types'
+import type { Process } from '@lifi-fork/types'
 import type {
   Client,
   GetAddressesReturnType,

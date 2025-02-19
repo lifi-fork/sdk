@@ -1,4 +1,4 @@
-import type { ChainType } from '@lifi/types'
+import type { ChainType } from '@lifi-fork/types'
 import { config } from '../config.js'
 
 export const getNameServiceAddress = async (

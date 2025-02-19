@@ -1,4 +1,4 @@
-import type { LiFiStep } from '@lifi/types'
+import type { LiFiStep } from '@lifi-fork/types'
 import type { Client } from 'viem'
 import type { Mock } from 'vitest'
 import { beforeEach, describe, expect, it, vi } from 'vitest'

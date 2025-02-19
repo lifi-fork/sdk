@@ -1,5 +1,5 @@
-import * as lifiDataTypes from '@lifi/data-types'
-import type { ContractCallsQuoteRequest, StatusResponse } from '@lifi/sdk'
+import * as lifiDataTypes from '@lifi-fork/data-types'
+import type { ContractCallsQuoteRequest, StatusResponse } from '@lifi-fork/sdk'
 import {
   ChainId,
   CoinKey,
@@ -7,7 +7,7 @@ import {
   createConfig,
   getContractCallsQuote,
   getStatus,
-} from '@lifi/sdk'
+} from '@lifi-fork/sdk'
 import type { Address, Chain } from 'viem'
 import {
   http,

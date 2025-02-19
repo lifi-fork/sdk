@@ -1,6 +1,6 @@
 // biome-ignore lint/performance/noBarrelFile: module entrypoint
 // biome-ignore lint/performance/noReExportAll: types
-export * from '@lifi/types'
+export * from '@lifi-fork/types'
 export { config } from './config.js'
 export { EVM } from './core/EVM/EVM.js'
 export {

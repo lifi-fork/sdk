@@ -25,7 +25,7 @@ import {
   type TransactionAnalyticsResponse,
   isContractCallsRequestWithFromAmount,
   isContractCallsRequestWithToAmount,
-} from '@lifi/types'
+} from '@lifi-fork/types'
 import { config } from '../config.js'
 import { SDKError } from '../errors/SDKError.js'
 import { ValidationError } from '../errors/errors.js'

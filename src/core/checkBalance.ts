@@ -1,4 +1,4 @@
-import type { LiFiStep } from '@lifi/types'
+import type { LiFiStep } from '@lifi-fork/types'
 import { formatUnits } from 'viem'
 import { BalanceError } from '../errors/errors.js'
 import { getTokenBalance } from '../services/balance.js'

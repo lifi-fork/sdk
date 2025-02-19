@@ -1,4 +1,4 @@
-import { type BaseToken, ChainType } from '@lifi/types'
+import { type BaseToken, ChainType } from '@lifi-fork/types'
 import type { Client, Hash } from 'viem'
 import type { SwitchChainHook } from '../types.js'
 import type { SDKProvider } from '../types.js'

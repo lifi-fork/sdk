@@ -1,4 +1,4 @@
-import { ChainType } from '@lifi/types'
+import { ChainType } from '@lifi-fork/types'
 import { config } from './config.js'
 import { checkPackageUpdates } from './helpers.js'
 import { getChains } from './services/api.js'

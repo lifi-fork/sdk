@@ -1,5 +1,5 @@
 import { isUTXOAddress } from '@bigmi/core'
-import { ChainType } from '@lifi/types'
+import { ChainType } from '@lifi-fork/types'
 import type { StepExecutorOptions } from '../types.js'
 import { UTXOStepExecutor } from './UTXOStepExecutor.js'
 import { getUTXOBalance } from './getUTXOBalance.js'

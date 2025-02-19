@@ -1,5 +1,5 @@
-import type { StaticToken, Token } from '@lifi/types'
-import { ChainId, CoinKey } from '@lifi/types'
+import type { StaticToken, Token } from '@lifi-fork/types'
+import { ChainId, CoinKey } from '@lifi-fork/types'
 import { beforeAll, describe, expect, it } from 'vitest'
 import { setupTestEnvironment } from '../../../tests/setup.js'
 import { findDefaultToken } from '../../../tests/tokens.js'

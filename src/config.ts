@@ -1,4 +1,4 @@
-import { ChainId, type ExtendedChain } from '@lifi/types'
+import { ChainId, type ExtendedChain } from '@lifi-fork/types'
 import type { SDKProvider } from './core/types.js'
 import type { RPCUrls, SDKBaseConfig, SDKConfig } from './types/internal.js'
 

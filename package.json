@@ -1,6 +1,6 @@
 {
-  "name": "@lifi/sdk",
-  "version": "3.5.4",
+  "name": "@lifi-fork/sdk",
+  "version": "3.5.5",
   "description": "LI.FI Any-to-Any Cross-Chain-Swap SDK",
   "keywords": [
     "bridge",
@@ -93,7 +93,7 @@
   },
   "dependencies": {
     "@bigmi/core": "^0.1.1",
-    "@lifi/types": "^16.8.1",
+    "@lifi-fork/types": "^16.11.0",
     "@noble/curves": "^1.8.1",
     "@solana/wallet-adapter-base": "^0.9.23",
     "@solana/web3.js": "^1.98.0",

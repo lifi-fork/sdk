@@ -1,4 +1,4 @@
-import type { LiFiStep, Process } from '@lifi/types'
+import type { LiFiStep, Process } from '@lifi-fork/types'
 import { beforeAll, describe, expect, it, vi } from 'vitest'
 import { buildStepObject } from '../../../tests/fixtures.js'
 import { setupTestEnvironment } from '../../../tests/setup.js'
